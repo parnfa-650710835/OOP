@@ -219,3 +219,42 @@ int main(){
 {% endcode %}
 
 {% file src=".gitbook/assets/oopC++.c++" %}
+
+## ความเหมือนและความแตกต่าง
+
+ของการเขียน **OOP** ในภาษา Java ,Python, และ C++
+
+### ความเหมือน
+
+* ทั้งสามภาษามีแนวคิดการเขียน OOP ที่คล้าย ๆ กันมาก เช่น การใช้ class , การ inheritance, polymorphism, และการ encapsulation
+
+### ความแตกต่าง
+
+* **Java**, **C++,  Python** มีการจัดการหน่วยความจำที่แตกต่างกัน โดย C++ กับ Python ต้องจัดการเอง ส่วน Java ใช้ Garbage Collection ซึ่งเป็นไปตามโค้ดตัวอย่างดังนี้
+
+{% code title="Java" %}
+```java
+protected void finalize() {
+    System.out.println("delete animal");
+}
+```
+{% endcode %}
+
+{% code title="Python" %}
+```python
+def __del__(self):
+    print("delete animal")
+```
+{% endcode %}
+
+{% code title="C++" %}
+```cpp
+virtual ~Animal() {
+    cout << "delete animal"<< endl;
+}
+```
+{% endcode %}
+
+ซึ่งใน **Java** จะมีการเรียกใช้ <mark style="color:red;">Method Finalize()</mark>  แต่ของ **Python และ C++** มีการใช้งาน <mark style="color:red;">\_\_del\_\_(self)</mark> และ <mark style="color:red;">\~Animal()</mark> ได้เลย
+
+* **Python** มีความยืดหยุ่นสูงกว่า Java และ C++ ในแง่ที่ไม่ต้องกำหนด Data type ที่ชัดเจน และมี syntax ที่ง่ายและสั้นกว่า
