@@ -1,13 +1,33 @@
 ---
-description: เปรียบเทียบโค้ด OOP ในภาษา Java, Python, C++
 icon: pencil
+description: เปรียบเทียบโค้ด OOP ในภาษา Java, Python, C++
+cover: .gitbook/assets/6c3f63dbeca4fff8c8980011d89055e8.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # OOP
 
+##
+
+{% embed url="https://github.com/parnfa-650710835/OOP" %}
+
 ## Java
 
-```
+```java
 class Animal {
     Animal() {
         System.out.println("create animal");
@@ -68,9 +88,11 @@ public class oopJava {
 }
 ```
 
+{% file src=".gitbook/assets/oopJava.java" %}
+
 ## Python
 
-```
+```python
 class Animal:
     def __init__(self):
         print("create animal")
@@ -119,9 +141,12 @@ del d
 del c
 ```
 
+{% file src=".gitbook/assets/oopPython.py" %}
+
 ## C++
 
-```
+{% code fullWidth="false" %}
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -187,3 +212,6 @@ int main(){
     return 0;
 }
 ```
+{% endcode %}
+
+{% file src=".gitbook/assets/oopC++.c++" %}
